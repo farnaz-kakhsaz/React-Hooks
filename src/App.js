@@ -5,7 +5,8 @@ import "./App.css";
 // import HookCounterTwo from "./components/HookCounterTwo";
 // import HookCounterThree from "./components/HookCounterThree";
 // import HookCounterFour from "./components/HookCounterFour";
-import HookCounerOne from "./components/HookCounterOne";
+// import HookCounerOne from "./components/HookCounterOne";
+import HookMouse from "./components/HookMouse";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <HookCounterTwo /> */}
       {/* <HookCounterThree /> */}
       {/* <HookCounterFour /> */}
-      <HookCounerOne />
+      {/* <HookCounerOne /> */}
+      <HookMouse />
     </div>
   );
 }
