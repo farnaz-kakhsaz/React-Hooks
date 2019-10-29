@@ -5,7 +5,6 @@ function HookMouse() {
   const [y, setY] = useState(0);
 
   function logMousePosition(e) {
-    console.log(e);
     setX(e.offsetX);
     setY(e.offsetY);
   }
@@ -13,9 +12,9 @@ function HookMouse() {
   useEffect(() => {
     window.addEventListener("mousemove", logMousePosition);
 
-    return {
-      // document.re
-    };
+    return () => {
+      window.removeEventListener("mousemove", logMousePosition)
+    }
   }, []);
   return (
     <div>

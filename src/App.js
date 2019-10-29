@@ -6,7 +6,10 @@ import "./App.css";
 // import HookCounterThree from "./components/HookCounterThree";
 // import HookCounterFour from "./components/HookCounterFour";
 // import HookCounerOne from "./components/HookCounterOne";
-import HookMouse from "./components/HookMouse";
+// import HookMouse from "./components/HookMouse";
+// import MouseContainer from "./components/MouseContainer";
+import IntervalHookCounter from "./components/IntervalHookCounter";
+import IntervalClassCounter from "./components/IntervalClassCounter";
 
 function App() {
   return (
@@ -15,7 +18,10 @@ function App() {
       {/* <HookCounterThree /> */}
       {/* <HookCounterFour /> */}
       {/* <HookCounerOne /> */}
-      <HookMouse />
+      {/* <HookMouse /> */}
+      {/* <MouseContainer /> */}
+      <IntervalClassCounter />
+      <IntervalHookCounter />
     </div>
   );
 }
