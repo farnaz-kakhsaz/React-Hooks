@@ -1,6 +1,21 @@
-import React from "react"
+import React, { useContext } from "react"
 import ComponentF from "./ComponentF"
+import { UserContext, ChannelContext } from "../App"
+
+
 
 export default function ComponentE() {
-    return <ComponentF />
+    const name = useContext(UserContext)
+    const family = useContext(ChannelContext)
+
+
+    return (
+        <>
+
+            <ComponentF />
+
+            {name}{family}
+
+        </>
+    )
 }

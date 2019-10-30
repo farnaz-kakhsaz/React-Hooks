@@ -28,8 +28,8 @@ function App() {
       {/* <IntervalClassCounter /> */}
       {/* <IntervalHookCounter /> */}
       {/* <DataFetching /> */}
-      <UserContext.Provider value="farnaz">
-        <ChannelContext.Provider value="kakhsaz">
+      <UserContext.Provider value="Big">
+        <ChannelContext.Provider value="Dream">
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider>
