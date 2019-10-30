@@ -5,10 +5,10 @@ import axios from "axios"
 export default function DataFetching() {
     const [post, setPost] = useState([])
     const [id, setId] = useState(1)
-    const [postId, setPostId] = useState(1)
+    const [idFromButtonClick, setIdFromButtonClick] = useState(1)
 
     function handleClick() {
-        setPostId(id)
+        setIdFromButtonClick(id)
     }
 
     function handleChange(event) {
@@ -17,7 +17,7 @@ export default function DataFetching() {
     }
 
     useEffect(() => {
-        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`).then(response => {
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`).then(response => {
             console.log(response.data)
             setPost(response.data)
         }
@@ -25,7 +25,7 @@ export default function DataFetching() {
             error =>
                 console.log(error)
         )
-    }, [id])
+    }, [idFromButtonClick])
 
     return (
         <>
