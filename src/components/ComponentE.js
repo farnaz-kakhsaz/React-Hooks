@@ -11,11 +11,8 @@ export default function ComponentE() {
 
     return (
         <>
-
             <ComponentF />
-
             {name}{family}
-
         </>
     )
 }
